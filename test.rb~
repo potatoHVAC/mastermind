@@ -1,0 +1,11 @@
+module First
+  def hi
+    puts 'hi'
+  end
+
+  def sec
+    hi
+  end
+end
+
+First.hi

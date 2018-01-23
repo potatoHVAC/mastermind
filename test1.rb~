@@ -1,0 +1,30 @@
+require './main.rb'
+
+test_size = 6
+test_board = Board.new(test_size)
+puts "board"
+puts test_board
+
+puts "solid guesses"
+for i in 1..6
+  test_guess_rand = []
+  test_size.times { test_guess_rand << Peg.new(i) }
+  image = test_guess_rand.map(&:to_s).join(' ')
+  pos, col = test_board.check_guess(test_guess_rand)
+  puts image + " | pos #{pos} | col #{col}"
+end
+puts "random guesses"
+5.times do
+  test_guess_rand = []
+  test_size.times { test_guess_rand << Peg.new }
+  image = test_guess_rand.map(&:to_s).join(' ')
+  pos, col = test_board.check_guess(test_guess_rand)
+  puts image + " | pos #{pos} | col #{col}"
+end
+
+
+puts "correct"
+test_guess_correct = test_board.key
+image = test_guess_correct.map(&:to_s).join(' ')
+pos, col = test_board.check_guess(test_guess_correct)
+puts image + " | pos #{pos} | col #{col}"
