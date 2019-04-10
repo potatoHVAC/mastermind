@@ -1,6 +1,0 @@
-require './main.rb'
-
-test_len = 5
-test_board = Board.new(test_len)
-
-puts "number of colors #{Peg.number_of_colors}"
