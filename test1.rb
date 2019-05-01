@@ -1,7 +1,8 @@
+#!/usr/bin/env ruby
 require './main.rb'
 
 test_size = 10
-rand_guesses = 20
+rand_guesses = 5
 test_board = Board.new(test_size)
 puts "board"
 puts test_board

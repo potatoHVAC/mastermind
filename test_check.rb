@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require './main.rb'
 
 test_len = 5
