@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require './player.rb'
 
 module Game
@@ -34,4 +33,4 @@ module Game
   end
 end
 
-Game.start
+#Game.start
